@@ -1,0 +1,120 @@
+/* CUSTOM-PROPS */
+:root{
+    --text-color: #69707D;
+    --text-color-dark: #1D2026;
+    --accent-color: #FF7E1B;
+    --accent-color-hover: #FFAB6A;
+    --accent-color-light: #FFEEE2;
+    --light-bg: #F6F8FD;
+
+    --font-family: 'Kumha Sans', 'Arial', sans-serif;
+}
+
+/* FONTS-FACE */
+@font-face {
+    font-family: 'Kumbh Sans';
+    src: url('../fonts/KumbhSans-Bold.woff2') format('woff2'),
+    url('../fonts/KumbhSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kumbh Sans';
+    src: url('../fonts/KumbhSans-Regular.woff2') format('woff2'),
+    url('../fonts/KumbhSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+/* GLOBAL */
+html{
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    color: var(--text-color);
+    overflow-x: hidden;
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.15px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    width: 100%;
+    max-width: 1148px;
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* AUTOFILL-STYLES */
+
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 0;
+    -webkit-text-fill-color: inherit;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+} */
+
+
+/* PLACEHOLDER-STYLES */
+/* ::-webkit-input-placeholder { 
+    color: pink;
+}
+::-moz-placeholder { 
+    color: pink;
+}
+:-ms-input-placeholder {
+    color: pink;
+}
+:-moz-placeholder {
+    color: pink;
+}
+*/
+/* VISUALLY-HIDDEN */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
