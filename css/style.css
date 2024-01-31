@@ -153,6 +153,10 @@ select:-webkit-autofill:focus {
 }
 
 /* SITENAV */
+.site-header__sitenav{
+    margin-right: auto;
+}
+
 .sitenav__list{
     display: flex;
     padding: 0;
